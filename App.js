@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import styled from 'styled-components';
+import Login from './src/screens/login';
+import Cadastro from './src/screens/cadastro';
+import Ativos from './src/screens/carrosativos';
+
+
+const ContainerApp = styled.SafeAreaView`
+  flex: 1;
+`
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ContainerApp>
+      <StatusBar hidden/>
+      {/* <Login/> */}
+      {/* <Cadastro/> */}
+      <Ativos/>
+    </ContainerApp>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
