@@ -1,4 +1,4 @@
-import { HistoricoContainer, InputSaida, InputValorpago, ContainerAtivos, Inputentrada, Inputplaca, Logo, Menu, Navegacao, TextoCarros } from "./styles";
+import { HistoricoContainer, InputSaida, InputValorpago, ContainerAtivos, Inputentrada, Inputplaca, Logo, Menu, Navegacao, TextoCarros, ContainerLine } from "./styles";
 
 
 export default function Historico() {
@@ -8,25 +8,58 @@ export default function Historico() {
                 <Logo source={require('../../assets/logo.png')}/>
                 <Menu source={require('../../assets/menu.png')}/>
             </Navegacao>
-            <TextoCarros>Carros ativos</TextoCarros>
+            <TextoCarros>Historico de carros</TextoCarros>
             <ContainerAtivos>
-                <Inputplaca>Placa:</Inputplaca> 
-                <Inputentrada>Entrada:</Inputentrada>
-                <InputValorpago>Valor pago:</InputValorpago>
-                <InputSaida>Saida:</InputSaida>
+                <ContainerLine>
+                    <Inputplaca>Placa:</Inputplaca> 
+                    <Inputentrada>Entrada:</Inputentrada>
+                </ContainerLine>
+                <ContainerLine>
+                    <InputValorpago>Valor pago:</InputValorpago>
+                    <InputSaida>Saida:</InputSaida>
+                </ContainerLine>
             </ContainerAtivos>
             <ContainerAtivos>
-                <Inputplaca>Placa:</Inputplaca> 
-                <Inputentrada>Entrada:</Inputentrada>
-                <InputValorpago>Valor pago:</InputValorpago>
-                <InputSaida>Saida:</InputSaida>
+                <ContainerLine>
+                    <Inputplaca>Placa:</Inputplaca> 
+                    <Inputentrada>Entrada:</Inputentrada>
+                </ContainerLine>
+                <ContainerLine>
+                    <InputValorpago>Valor pago:</InputValorpago>
+                    <InputSaida>Saida:</InputSaida>
+                </ContainerLine>
             </ContainerAtivos>
             <ContainerAtivos>
-                <Inputplaca>Placa:</Inputplaca> 
-                <Inputentrada>Entrada:</Inputentrada>
-                <InputValorpago>Valor pago:</InputValorpago>
-                <InputSaida>Saida:</InputSaida>
+                <ContainerLine>
+                    <Inputplaca>Placa:</Inputplaca> 
+                    <Inputentrada>Entrada:</Inputentrada>
+                </ContainerLine>
+                <ContainerLine>
+                    <InputValorpago>Valor pago:</InputValorpago>
+                    <InputSaida>Saida:</InputSaida>
+                </ContainerLine>
             </ContainerAtivos>
+            <ContainerAtivos>
+                <ContainerLine>
+                    <Inputplaca>Placa:</Inputplaca> 
+                    <Inputentrada>Entrada:</Inputentrada>
+                </ContainerLine>
+                <ContainerLine>
+                    <InputValorpago>Valor pago:</InputValorpago>
+                    <InputSaida>Saida:</InputSaida>
+                </ContainerLine>
+            </ContainerAtivos>
+            <ContainerAtivos>
+                <ContainerLine>
+                    <Inputplaca>Placa:</Inputplaca> 
+                    <Inputentrada>Entrada:</Inputentrada>
+                </ContainerLine>
+                <ContainerLine>
+                    <InputValorpago>Valor pago:</InputValorpago>
+                    <InputSaida>Saida:</InputSaida>
+                </ContainerLine>
+            </ContainerAtivos>
+
             
         </HistoricoContainer>
     )

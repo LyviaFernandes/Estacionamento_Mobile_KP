@@ -3,21 +3,23 @@ import styled from "styled-components/native";
 export const CadastroContainer = styled.View`
     flex: 1;
     background-color: #E3A7DE;
+    display: flex;
+    
 `
 export const Logo = styled.Image`
-       width: 250px; 
+    margin: 15px;
 `
 export const LoginText = styled.Text`
     color: #3E043D;
     font-size: 24px;
     display: flex;
     text-align: center;
-    margin-top: 40%;
+    margin-top: 80px;
 `
 export const LoginInput = styled.View`
     background-color: #D9D9D9;
     width: 332px;
-    height: 380px;
+    height: 370px;
     margin: 40px;
     border-radius: 8px;
 `
@@ -28,7 +30,6 @@ export const InputEmail = styled.TextInput`
     width: 260px;
     height: 42px;
     margin-left: 36px;
-  
     margin-bottom: 19px;
     border-radius: 3px;
     padding-left: 15px;

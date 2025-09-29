@@ -3,6 +3,7 @@ import styled from "styled-components/native";
 export const CarrosAtivos = styled.View`
     display: flex;
     background-color:rgb(252, 252, 252);
+    align-items: center;
 `
 export const Navegacao = styled.View`
     background-color: #E3A7DE;
@@ -11,7 +12,7 @@ export const Navegacao = styled.View`
     display: flex;
 `
 export const Logo = styled.Image`
-       width: 250px; 
+    margin: 15px;
 `
 export const Menu = styled.Image`
     width: 48px;
@@ -46,7 +47,7 @@ export const Inputplaca = styled.TextInput`
     font-size: 16px;
     width: 115px;
     height: 36px;
-    margin-left: 36px;
+
     border-radius: 3px;
     padding-left: 15px;
 `

@@ -3,6 +3,7 @@ import styled from "styled-components/native";
 export const HistoricoContainer = styled.View`
     display: flex;
     background-color:rgb(252, 252, 252);
+    align-items: center;
 `
 export const Navegacao = styled.View`
     background-color: #E3A7DE;
@@ -11,7 +12,7 @@ export const Navegacao = styled.View`
     display: flex;
 `
 export const Logo = styled.Image`
-       width: 250px; 
+    margin: 15px;
 `
 export const Menu = styled.Image`
     width: 48px;
@@ -26,28 +27,36 @@ export const TextoCarros = styled.Text`
     margin-top: 47px;
     color: #3E043D;
     text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 65px;
 `
 export const ContainerAtivos = styled.View`
     background-color: #E3A7DE;
     width: 100%;
-    height: 93px;
+    height:60px;
     display: flex;
     justify-content: baseline;
-    margin-bottom: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    margin-bottom: 75px;
 `
-
+export const ContainerLine = styled.View`
+    background-color: #E3A7DE;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`
 export const Inputplaca = styled.TextInput`
     color: #A796A6;
     background-color: white;
     font-size: 16px;
     width: 115px;
     height: 36px;
-    margin-left: 36px;
     border-radius: 3px;
     padding-left: 15px;
 `
@@ -63,15 +72,13 @@ export const Inputentrada = styled.TextInput`
 
 `
 export const InputValorpago = styled.TextInput`
-    color: #A796A6;
+       color: #A796A6;
     background-color: white;
     font-size: 16px;
-    width: 209px;
+    width: 115px;
     height: 36px;
-    margin-left: 36px;
     border-radius: 3px;
     padding-left: 15px;
-
 `
 export const InputSaida = styled.TextInput`
     color: #A796A6;

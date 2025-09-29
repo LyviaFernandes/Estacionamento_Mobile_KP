@@ -2,8 +2,9 @@ import styled from "styled-components/native";
 
 export const SaidaContainer = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    flex-direction: column;
     align-items: center;
+    background-color:rgb(252, 252, 252);
 `
 export const Navegacao = styled.View`
     background-color: #E3A7DE;
@@ -18,7 +19,7 @@ export const Menu = styled.Image`
     width: 48px;
     height: 27px;
     margin-left: 83%;
-    margin-top: -98;
+    margin-top: -68;
 `
 ///////
 export const TextoSaida = styled.Text`
@@ -30,8 +31,7 @@ export const TextoSaida = styled.Text`
 `
 export const ContainerSaida = styled.View`
     background-color: #E3A7DE;
-    width: 319px;
-    height:350px;
+    padding: 30px 25px;
     display: flex;
     justify-content: baseline;
     flex-direction: row;
@@ -48,14 +48,12 @@ export const InputSaida = styled.TextInput`
     height: 36px;
     border-radius: 3px;
     padding-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 `
-export const ValorPag = styled.Text`
-    color: #873986;
-    font-size: 18px;
-    display: flex;
-    text-align: center;
-    margin-top: 13px;
+export const TextVoltar = styled.Text`
+    color: #3E043D;
+    font-size: 14px;
+    align-self: flex-end;
 `
 export const Button = styled.TouchableOpacity`
     background-color: #A96ABE;
@@ -64,12 +62,10 @@ export const Button = styled.TouchableOpacity`
     border-radius: 3px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 10px;
 `
 export const TextButton = styled.Text`
         color: white;
-        font-size: 20px;
-        margin-top: 5px;
-
-        
+        font-size: 15px;
 `

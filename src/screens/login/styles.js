@@ -3,9 +3,11 @@ import styled from "styled-components/native";
 export const LoginContainer = styled.View`
     flex: 1;
     background-color:rgb(227, 167, 222);
+    display: flex;
+   
 `
 export const Logo = styled.Image`
-       width: 250px; 
+    margin: 15px;
 `
 export const LoginText = styled.Text`
     color: #3E043D;

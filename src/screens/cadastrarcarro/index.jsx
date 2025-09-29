@@ -1,7 +1,8 @@
+import { TextVoltar } from "./styles";
 import { Button, ContainerSaida, Inputplaca, InputSaida, Logo, Menu, Navegacao, SaidaContainer, TextButton, TextoSaida, ValorPag } from "./styles";
 
 
-export default function Saida() {
+export default function CadastrarCarro() {
     return (
         <SaidaContainer>
             <Navegacao>
@@ -11,14 +12,11 @@ export default function Saida() {
             <TextoSaida>Saida</TextoSaida>
             <ContainerSaida>
                 <InputSaida>Placa</InputSaida>
-                <InputSaida>Hora entrada</InputSaida>
-                <InputSaida>Data entrada</InputSaida>
-                <InputSaida>Hora saida</InputSaida>
-                <InputSaida>Data saida</InputSaida>
-                <ValorPag>Valor a pagar:</ValorPag>
+                <InputSaida>Entrada</InputSaida>
+                <TextVoltar>Voltar</TextVoltar>
             </ContainerSaida>
             <Button>
-                <TextButton>Salvar</TextButton>
+                <TextButton>Cadastrar</TextButton>
             </Button>
         </SaidaContainer>
     )
