@@ -1,7 +1,9 @@
 import { Button, ContainerSaida, Inputplaca, InputSaida, Logo, Menu, Navegacao, SaidaContainer, TextButton, TextoSaida, ValorPag } from "./styles";
-
+import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native";
 
 export default function Saida() {
+    const navigation = useNavigation();
     return (
         <SaidaContainer>
             <Navegacao>
@@ -10,15 +12,17 @@ export default function Saida() {
             </Navegacao>
             <TextoSaida>Saida</TextoSaida>
             <ContainerSaida>
-                <InputSaida>Placa</InputSaida>
-                <InputSaida>Hora entrada</InputSaida>
-                <InputSaida>Data entrada</InputSaida>
-                <InputSaida>Hora saida</InputSaida>
-                <InputSaida>Data saida</InputSaida>
+                <InputSaida placeholder="placa"></InputSaida>
+                <InputSaida placeholder="hora entrada"></InputSaida>
+                <InputSaida placeholder="data entrada"></InputSaida>
+                <InputSaida placeholder="hora saida"></InputSaida>
+                <InputSaida placeholder="data saida"></InputSaida>
                 <ValorPag>Valor a pagar:</ValorPag>
             </ContainerSaida>
             <Button>
-                <TextButton>Salvar</TextButton>
+                <TouchableOpacity onPress={() => navigation.navigate("Historico")}>
+                    <TextButton>Registrar saida</TextButton>
+                </TouchableOpacity>
             </Button>
         </SaidaContainer>
     )

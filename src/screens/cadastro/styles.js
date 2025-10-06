@@ -22,6 +22,7 @@ export const LoginInput = styled.View`
     height: 370px;
     margin: 40px;
     border-radius: 8px;
+    elevation: 6px;
 `
 export const InputEmail = styled.TextInput`
     color: #A796A6;
@@ -33,7 +34,7 @@ export const InputEmail = styled.TextInput`
     margin-bottom: 19px;
     border-radius: 3px;
     padding-left: 15px;
-
+    elevation: 3px;
 `
 export const Input = styled.TextInput`
         color: #A796A6;
@@ -45,6 +46,7 @@ export const Input = styled.TextInput`
         margin-bottom: 19px;
         border-radius: 3px;
         padding-left: 15px;
+        elevation: 3px;
 `
 export const InputNome = styled.TextInput`
         color: #A796A6;
@@ -57,6 +59,7 @@ export const InputNome = styled.TextInput`
         border-radius: 3px;
         padding-left: 15px;
         margin-top: 29px;
+        elevation: 3px;
 `
 export const Inputsenha = styled.TextInput`
         color: #A796A6;
@@ -68,6 +71,7 @@ export const Inputsenha = styled.TextInput`
         margin-bottom: 19px;
         border-radius: 3px;
         padding-left: 15px;
+        elevation: 3px;
 `
 export const Button = styled.TouchableOpacity`
     background-color: #A96ABE;
@@ -75,6 +79,7 @@ export const Button = styled.TouchableOpacity`
     height: 42px;
     border-radius: 3px;
     margin-left: 59px;
+    elevation: 3px;
 `
 export const TextButton = styled.Text`
         color: white;

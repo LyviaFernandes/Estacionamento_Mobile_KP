@@ -18,7 +18,7 @@ export const Menu = styled.Image`
     width: 48px;
     height: 27px;
     margin-left: 83%;
-    margin-top: -98;
+    margin-top: -68;
 `
 ///////
 
@@ -59,6 +59,7 @@ export const Inputplaca = styled.TextInput`
     height: 36px;
     border-radius: 3px;
     padding-left: 15px;
+    elevation: 3px;
 `
 export const Inputentrada = styled.TextInput`
     color: #A796A6;
@@ -69,6 +70,7 @@ export const Inputentrada = styled.TextInput`
     margin-left: 36px;
     border-radius: 3px;
     padding-left: 15px;
+    elevation: 3px;
 
 `
 export const InputValorpago = styled.TextInput`
@@ -79,6 +81,7 @@ export const InputValorpago = styled.TextInput`
     height: 36px;
     border-radius: 3px;
     padding-left: 15px;
+    elevation: 3px;
 `
 export const InputSaida = styled.TextInput`
     color: #A796A6;
@@ -89,5 +92,5 @@ export const InputSaida = styled.TextInput`
     margin-left: 36px;
     border-radius: 3px;
     padding-left: 15px;
-
+    elevation: 3px;
 `

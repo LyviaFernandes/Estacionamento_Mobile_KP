@@ -5,6 +5,7 @@ export const SaidaContainer = styled.View`
     flex-direction: column;
     align-items: center;
     background-color:rgb(252, 252, 252);
+    flex: 1;
 `
 export const Navegacao = styled.View`
     background-color: #E3A7DE;
@@ -39,6 +40,7 @@ export const ContainerSaida = styled.View`
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
+    elevation: 6px;
 `
 export const InputSaida = styled.TextInput`
     color: #A796A6;
@@ -49,6 +51,7 @@ export const InputSaida = styled.TextInput`
     border-radius: 3px;
     padding-left: 15px;
     margin-bottom: 15px;
+    elevation: 3px;
 `
 export const TextVoltar = styled.Text`
     color: #3E043D;

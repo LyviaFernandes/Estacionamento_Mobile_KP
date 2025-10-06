@@ -19,9 +19,10 @@ export const LoginText = styled.Text`
 export const LoginInput = styled.View`
     background-color: #D9D9D9;
     width: 332px;
-    height: 237px;
+    height: 267px;
     margin: 40px;
     border-radius: 8px;
+    elevation: 6px;
 `
 export const InputEmail = styled.TextInput`
     color: #A796A6;
@@ -53,6 +54,7 @@ export const Button = styled.TouchableOpacity`
     height: 42px;
     border-radius: 3px;
     margin-left: 59px;
+    elevation: 3px;
 `
 export const TextButton = styled.Text`
         color: white;
@@ -63,8 +65,8 @@ export const TextButton = styled.Text`
 `
 export const InfoLogin = styled.Text`
     color: #3E043D;
-    font-size: 18px;
+    font-size: 15px;
     display: flex;
     text-align: center;
-    margin-top: 13px;
+    margin-top: 5px;
 `
