@@ -1,63 +1,61 @@
 import React from "react";
-import { Adicionar, CarrosAtivos, ContainerAtivos, FlatList, Inputentrada, Inputplaca, Logo, Menu, Navegacao, TextoCarros } from "./styles";
+import { FlatList, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { TouchableOpacity } from "react-native";
+import { 
+  Adicionar, 
+  Btn, 
+  CarrosAtivos, 
+  ContainerAtivos, 
+  Inputentrada, 
+  Inputplaca, 
+  Logo, 
+  Menu, 
+  Navegacao, 
+  TextoCarros 
+} from "./styles";
 
 export default function AtivesCar() {
-    const navigation = useNavigation();
-    return (
-        <CarrosAtivos>
-            <Navegacao>
-                <Logo source={require('../../assets/logo.png')}/>
-                <Menu source={require('../../assets/menu.png')}/>
-            </Navegacao>
-                <TouchableOpacity onPress={() => navigation.navigate("CadCar")}>
-                   <Adicionar>Cadastrar carro</Adicionar>
-                </TouchableOpacity>
-            <TextoCarros>Carros ativos</TextoCarros>
-            
-                <TouchableOpacity onPress={() => navigation.navigate("saidaCar")}>
-                    <ContainerAtivos>
-                        <Inputplaca>KDP3L92</Inputplaca> 
-                        <Inputentrada>07:15 27-09-2025</Inputentrada>
-                    </ContainerAtivos>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate("saidaCar")}>
-                    <ContainerAtivos>
-                        <Inputplaca>MTX5C17</Inputplaca> 
-                        <Inputentrada>08:30 27-09-2025</Inputentrada>
-                    </ContainerAtivos>
-                </TouchableOpacity>
+  const navigation = useNavigation();
 
-                <TouchableOpacity onPress={() => navigation.navigate("saidaCar")}>
-                    <ContainerAtivos>
-                        <Inputplaca>BRQ7F84</Inputplaca> 
-                        <Inputentrada>16:38 27-09-2025</Inputentrada>
-                    </ContainerAtivos>
-                </TouchableOpacity>
+  // 🔹 Dados simulados dos carros ativos
+  const carrosAtivosData = [
+    { id: "1", placa: "KDP3L92", entrada: "07:15 27-09-2025" },
+    { id: "2", placa: "MTX5C17", entrada: "08:30 27-09-2025" },
+    { id: "3", placa: "BRQ7F84", entrada: "16:38 27-09-2025" },
+    { id: "4", placa: "ZLH2M35", entrada: "12:40 27-09-2025" },
+    { id: "5", placa: "WEN9T61", entrada: "07:59 27-09-2025" },
+    { id: "6", placa: "XCV1J08", entrada: "08:10 27-09-2025" },
+  ];
 
-                <TouchableOpacity onPress={() => navigation.navigate("saidaCar")}>
-                    <ContainerAtivos>
-                        <Inputplaca>ZLH2M35</Inputplaca> 
-                        <Inputentrada>12:40 27-09-2025</Inputentrada>
-                    </ContainerAtivos>
-                </TouchableOpacity>
+  // 🔹 Renderiza cada item da lista
+  const renderItem = ({ item }) => (
+    <TouchableOpacity onPress={() => navigation.navigate("Saida")}>
+      <ContainerAtivos>
+        <Inputplaca>{item.placa}</Inputplaca>
+        <Inputentrada>{item.entrada}</Inputentrada>
+      </ContainerAtivos>
+    </TouchableOpacity>
+  );
 
-                <TouchableOpacity onPress={() => navigation.navigate("saidaCar")}>
-                    <ContainerAtivos>
-                        <Inputplaca>WEN9T61</Inputplaca> 
-                        <Inputentrada>07:59 27-09-2025</Inputentrada>
-                    </ContainerAtivos>
-                </TouchableOpacity>
+  return (
+    <CarrosAtivos style={{ flex: 1 }}>
+      <Navegacao>
+        <Logo source={require("../../assets/logo.png")} />
+        <Btn onPress={() => navigation.openDrawer()}>
+          <Menu source={require("../../assets/menu.png")} />
+        </Btn>
+      </Navegacao>
 
-                <TouchableOpacity onPress={() => navigation.navigate("saidaCar")}>
-                    <ContainerAtivos>
-                        <Inputplaca>XCV1J08</Inputplaca> 
-                        <Inputentrada>08:10 27-09-2025</Inputentrada>
-                    </ContainerAtivos>
-                </TouchableOpacity>
-            
-        </CarrosAtivos>
-    )
+      <TextoCarros>Carros ativos</TextoCarros>
+
+      {/* 🔹 FlatList para listar os carros ativos */}
+      <FlatList
+        data={carrosAtivosData}
+        keyExtractor={(item) => item.id}
+        renderItem={renderItem}
+        showsVerticalScrollIndicator={true}
+        contentContainerStyle={{ paddingBottom: 40 }}
+      />
+    </CarrosAtivos>
+  );
 }
-

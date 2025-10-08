@@ -14,6 +14,9 @@ export const Navegacao = styled.View`
 export const Logo = styled.Image`
     margin: 15px;
 `
+
+export const Btn = styled.TouchableOpacity``
+
 export const Menu = styled.Image`
     width: 48px;
     height: 27px;
@@ -27,7 +30,7 @@ export const TextoCarros = styled.Text`
     margin-top: 47px;
     color: #3E043D;
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 `
 export const ContainerAtivos = styled.View`
     background-color: #E3A7DE;

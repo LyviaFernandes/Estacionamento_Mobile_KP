@@ -20,7 +20,10 @@ export const Menu = styled.Image`
     height: 27px;
     margin-left: 83%;
     margin-top: -68;
+    
 `
+export const Btn = styled.TouchableOpacity``
+
 ///////
 export const TextoSaida = styled.Text`
     font-size: 24px;

@@ -1,4 +1,4 @@
-import { Button, ContainerSaida, Inputplaca, InputSaida, Logo, Menu, Navegacao, SaidaContainer, TextButton, TextoSaida, ValorPag } from "./styles";
+import { Btn, Button, ContainerSaida, Inputplaca, InputSaida, Logo, Menu, Navegacao, SaidaContainer, TextButton, TextoSaida, ValorPag } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
 
@@ -8,7 +8,9 @@ export default function Saida() {
         <SaidaContainer>
             <Navegacao>
                 <Logo source={require('../../assets/logo.png')}/>
-                <Menu source={require('../../assets/menu.png')}/>
+                <Btn onPress={() => navigation.openDrawer()} >
+                    <Menu source={require('../../assets/menu.png')}/>
+                </Btn>
             </Navegacao>
             <TextoSaida>Saida</TextoSaida>
             <ContainerSaida>

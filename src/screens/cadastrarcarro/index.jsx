@@ -1,4 +1,4 @@
-import { TextVoltar } from "./styles";
+import { Btn, TextVoltar } from "./styles";
 import { Button, ContainerSaida, Inputplaca, InputSaida, Logo, Menu, Navegacao, SaidaContainer, TextButton, TextoSaida, ValorPag } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import { TouchableOpacity } from "react-native";
@@ -9,21 +9,21 @@ export default function CadastrarCarro() {
         <SaidaContainer>
             <Navegacao>
                 <Logo source={require('../../assets/logo.png')}/>
-                <TouchableOpacity onPress={() => navigation.getParent()?.openDrawer()}>
+                <Btn onPress={() => navigation.openDrawer()} >
                     <Menu source={require('../../assets/menu.png')}/>
-                </TouchableOpacity>
+                </Btn>
 
             </Navegacao>
             <TextoSaida>Entrada de veiculo</TextoSaida>
             <ContainerSaida>
                 <InputSaida placeholder="Placa"></InputSaida>
                 <InputSaida placeholder="Entrada"></InputSaida>
-                <TouchableOpacity onPress={() => navigation.navigate("CarrosAtivos")}>
+                <TouchableOpacity onPress={() => navigation.navigate("Carros Ativos")}>
                     <TextVoltar>Voltar</TextVoltar>
                 </TouchableOpacity>
             </ContainerSaida>
             <Button>
-                 <TouchableOpacity onPress={() => navigation.navigate("CarrosAtivos")}>
+                 <TouchableOpacity onPress={() => navigation.navigate("Carros Ativos")}>
                  <TextButton>Cadastrar</TextButton>
                     
                 </TouchableOpacity>
