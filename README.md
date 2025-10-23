@@ -48,7 +48,7 @@ Criar um sistema de **gestão de estacionamento** em formato mobile, com foco em
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd ParkingApp
+   cd Estacionamento_Mobile_KP
    ```
 
 3. Instale as dependências:
